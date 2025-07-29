@@ -1,0 +1,61 @@
+/* Reset styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer-main {
+    background-color: rgb(188, 188, 178);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-info {
+    width: 70%;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+
+/* Centering text */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Heading styles */
+
+.info-heading {
+    color: rgb(182, 118, 0);
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.sub-info {
+    color: darkred;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 560;
+    font-size: 20px;
+}
+
+
+/* Paragraph styles */
+
+.info-p {
+    color: #333;
+    /* Different color from white */
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 18px;
+    /* Add space below paragraphs */
+}

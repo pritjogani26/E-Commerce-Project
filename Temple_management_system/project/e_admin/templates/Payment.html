@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="/static/Payment/Payment.css">
+    <link rel="stylesheet" href="/static/HeaderAndFooter/HeaderAndFooter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <input type="radio" name="photos" id="check1" checked>
+    <input type="radio" name="photos" id="check2">
+    <!-- Header_02 -->
+    <header>
+        <div class="header">
+            <div class="icon-box">
+                <div class="logo">
+                    <img src="Images/logo.jpg" alt="logo" height="100px" width="100px">
+                    <h1>Shree Kashtabhanjan Dev Hanumanji Mandir, Salangpur</h1>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="navbar">
+                <ul class="main-ul">
+                    <li class="point-color"><a href="Home">Home</a></li>
+                    <li class="point-color">
+                        <a>Online Service</a>
+                        <ul>
+                            <li><a href="Room_Booking">Room Booking</a></li>
+                            <li><a href="Store">Online Store</a></li>
+                        </ul>
+                    </li>
+                    <li class="point-color"><a href="Donation">Donation</a></li>
+                    <li class="point-color">
+                        <a>General Information</a>
+                        <ul>
+                            <li><a href="Information">Information</a></li>
+                            <li><a href="Schedule">Schedule</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="point-color">
+                        <a>Gallery</a>
+                        <ul>
+                            <li><a href="Photo_Gallery">Photos Gallery</a></li>
+                            <li><a href="Festival_Gallery">Event Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="point-color"><a href="News_And_Event">News and Events</a></li>
+                    <li class="point-color"><a href="Feedback">Contact us</a></li>
+                    <li class="point-color"><a href="SignIn" id="login-button">Log-In</a></li>
+                    <li class="point-color"><a href="SignUp" id="singUp-button">Sign-Up</a></li>
+                    <li class="point-color"><a href="Profile" id="login-button">Profile</a></li>
+                    <li class="point-color"><a href="Home" id="singUp-button">Log-out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main_payment">
+        <div class="heading">
+            <h2>Confirm Your Payment</h2>
+        </div>
+
+        <div class="main-container">
+            <div class="option-payment">
+                <label for="check1" id="check01">Debit and Credit Card</label>
+                <label for="check2" id="check02">UPI</label>
+            </div>
+            <div class="dac-container">
+                <h1>Debit and Credit Card</h1>
+                <div class="first-row">
+                    <div class="owner">
+                        <p class="_text">Name as on Card</p>
+                        <div class="input-field">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="cvv">
+                        <p class="_text">CVV</p>
+                        <div class="input-field">
+                            <input type="password">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="card-number">
+                        <p class="_text">Card Number</p>
+                        <div class="number-field">
+                            <input type="text" id="card1" name="card1" maxlength="4" required placeholder="XXXX" pattern="[0-9]{4}">
+                            <input type="text" id="card2" name="card2" maxlength="4" required placeholder="XXXX" pattern="[0-9]{4}">
+                            <input type="text" id="card3" name="card3" maxlength="4" required placeholder="XXXX" pattern="[0-9]{4}">
+                            <input type="text" id="card4" name="card4" maxlength="4" required placeholder="XXXX" pattern="[0-9]{4}">
+                        </div>
+                    </div>
+                </div>
+                <div class="third-row">
+                    <p class="_text">Expiry Date</p>
+                    <div class="selection">
+                        <div class="date">
+                            <select name="months" id="months">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                            <select name="years" id="years">
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                    </select>
+                        </div>
+                        <div class="cards">
+                            <img src="/static/Images/mc.png" alt="Master Card">
+                            <img src="/static/Images/vi.png" alt="Visa">
+                            <img src="/static/Images/pp.png" alt="Pay Pal">
+                        </div>
+                    </div>
+                </div>
+                <button id="btn01" value="Confirm" class="cbutton">Confirm</button>
+            </div>
+            <div class="upi-container">
+                <h1>UPI</h1>
+                <div class="first-row">
+                    <div class="owner">
+                        <p class="_text">Enter UPI Id</p>
+                        <div class="input-field">
+                            <input type="text" placeholder="yourname@bankname">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <button id="btn02" value="sendRequest" class="cbutton">Send Request</button>
+                </div>
+                <div class="third-row">
+                    <div class="selection">
+                        <p class="_text">OR...</p>
+
+                        <div class="cards">
+                            <img src="/static/Images/upi.jpg" alt="UPI">
+                            <img src="/static/Images/upi2.png" alt="UPI">
+                        </div>
+                    </div>
+                    <button id="btn01" value="qr" class="cbutton">Generate QR</button>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer_02 -->
+    <footer>
+        <div class="footer">
+            <div class="links">
+
+                <div class="content-list">
+                    <p><i class="fa-solid fa-arrows-to-dot footer-icon main-icon"></i>Useful Links : </p>
+                    <ul type="none">
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Home">Home</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Information">Information</a>
+                        </li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Schedule">Schedule</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Photo_Gallery">Photo Gallery</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Festival_Gallery">Event Gallery</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Room_Booking">Room Booking</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Store">Spiritual Store</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Donation">Donation</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="News_And_Event">Event and News</a></li>
+                    </ul>
+                </div>
+
+                <div class="download-app">
+                    <p><i class="fa-solid fa-arrows-to-dot footer-icon main-icon"></i>Download App :</p>
+                    <div class="download-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.kastbhanjandev.salangpur&hl=en">
+                            <img src="/static/Images/google-play.png" alt="Google Play" class="app-icon">
+                        </a>
+                        <a href="https://apps.apple.com/in/app/salangpur-hanumanji/id990972878">
+                            <img src="/static/Images/app-store.png" alt="App Store" class="app-icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <p><i class="fa-solid fa-arrows-to-dot footer-icon main-icon"></i>Location :</p>
+                    <a href="https://maps.app.goo.gl/DjssB7pYamfEH6xu7">
+                        <img src="/static/Images/location.png" alt="Location" class="location-icon">
+                    </a>
+                </div>
+
+                <div class="social-icon">
+                    <p><i class="fa-solid fa-arrows-to-dot footer-icon main-icon"></i>Social Media Links : </p>
+                    <ul class="social">
+                        <a href="https://www.instagram.com/salangpurhanumanji_official/?igshid=1tvbblkjsmms1"><i class="fa-brands fa-instagram media-icon"></i></a>
+                        <a href="https://www.facebook.com/SalangpurHanuman/"><i class="fa-brands fa-facebook media-icon"></i></a>
+                        <a href="https://www.youtube.com/user/salangpurhanumanji"><i class="fa-brands fa-youtube media-icon"></i></a>
+                        <a href="https://twitter.com/kashtbhanjandev?ref_src=twsrc%5Etfw"><i class="fa-brands fa-x-twitter media-icon"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Payment/Payment.js"></script>
+</body>
+
+</html>

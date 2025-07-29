@@ -1,0 +1,96 @@
+.science_container {
+    height: auto;
+    width: auto;
+    background-color: #e4e2e2;
+    color: black;
+    padding: 10px;
+}
+
+.science_heading {
+    width: 100%;
+    height: 70px;
+    max-height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #023d4b;
+    color: white;
+}
+
+.science_heading p {
+    text-align: center;
+    padding: 15px;
+}
+
+.read_more_Info {
+    width: 100%;
+    height: 50px;
+    background-color: #5cc6e0;
+    color: black;
+    font-size: 20px;
+    border: none;
+    /* border-top: 1px solid black; */
+}
+
+.read_more_Info:hover {
+    background-color: rgb(72, 181, 231);
+}
+
+.science_heading2 {
+    width: 100%;
+    height: 50px;
+    max-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #e4e2e2;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    /* border-bottom: 1px solid black; */
+}
+
+.science_top {
+    width: 100%;
+    color: black;
+    display: flex;
+    height: 250px;
+    background-color: #5cc6e0;
+}
+
+.main_Info {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.science_photo {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.science_photo img {
+    width: 100%;
+    height: 100%;
+    float: right;
+    border-radius: 0;
+}
+
+.science_main_text {
+    width: 60%;
+    height: 100%;
+    float: right;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.science_text {
+    width: 100%;
+    color: black;
+    font-size: 17px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

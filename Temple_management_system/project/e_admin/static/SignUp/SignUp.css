@@ -1,0 +1,101 @@
+.signup-container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #e4e2e2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.heading {
+    margin-bottom: 20px;
+    background-color: #023d4b;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    height: 60px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.form-group {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    width: 150px;
+    padding-top: 1.5vw;
+    max-width: 80%;
+}
+
+#fname,
+#lname,
+#mobileno,
+#emailid,
+#dob,
+#state,
+#address,
+#area,
+#city,
+#pincode,
+#password2,
+#password,
+#username,
+#uname {
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: 80%;
+    margin: 10px;
+}
+
+#address {
+    width: 670px;
+}
+
+#fname:focus,
+#lname:focus,
+#mobileno:focus,
+#emailid:focus,
+#dob:focus,
+#state:focus,
+#address:focus,
+#area:focus,
+#city:focus,
+#pincode:focus,
+#password:focus,
+#cpassword:focus,
+#username:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #023d4b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    width: 120px;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0296bb;
+}

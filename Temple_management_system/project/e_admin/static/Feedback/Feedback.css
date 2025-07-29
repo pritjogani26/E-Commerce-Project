@@ -1,0 +1,88 @@
+.feedback_container {
+    width: 50vw;
+    margin: 50px auto;
+    background-color: #e4e2e2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.heading {
+    margin-bottom: 20px;
+    background-color: #023d4b;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    height: 60px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.form-group {
+    margin: 1.5vw;
+    width: 100%;
+    display: flex;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    width: 12vw;
+    max-width: 80%;
+    margin: 10px;
+}
+
+#feedback,
+.gselect,
+#today,
+#uname {
+    width: 50%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: 80%;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#feedback {
+    width: 400px;
+    height: 100px;
+    max-height: 110px;
+    max-width: 410px;
+    min-width: 350px;
+    min-height: 80px;
+}
+
+#today:focus,
+#feedback:focus,
+.gselect:focus,
+#uname:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#feedback_submit {
+    padding: 10px 20px;
+    background-color: #023d4b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    width: 120px;
+}
+
+#feedback_submit:hover {
+    background-color: #0296bb;
+}

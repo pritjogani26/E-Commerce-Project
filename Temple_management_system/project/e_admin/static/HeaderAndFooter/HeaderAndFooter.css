@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background: #023d4b;
+    height: 120px;
+    position: relative;
+    /* Ensure z-index works properly */
+    z-index: 999;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 10px 0px 10px 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.logo img {
+    border-radius: 100%;
+}
+
+.navbar {
+    height: 60px;
+    background: #e4e2e2;
+    position: relative;
+    z-index: 998;
+    padding: 5px;
+}
+
+.navbar>ul {
+    height: 50px;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: center;
+    z-index: 999;
+    /* Ensure navbar appears above other content */
+}
+
+.navbar ul a {
+    color: black;
+    text-decoration: none;
+    line-height: 32px;
+    padding: 0px 15px;
+    display: block;
+}
+
+.navbar ul li {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    margin-top: 9px;
+}
+
+.main-ul li:hover {
+    border-top: 4px solid #023d4b;
+    border-radius: 5px 5px 0px 0px;
+    background: #cdcaca;
+}
+
+.navbar ul ul {
+    position: absolute;
+    background: #023d4b;
+    display: none;
+    z-index: 999;
+    margin-top: 0;
+    /* Ensure submenu appears above other content */
+}
+
+.navbar ul ul li {
+    float: none;
+    width: 200px;
+    border-top: 4px solid #d7d5d5;
+    padding: 2px;
+}
+
+.navbar ul li:hover>ul {
+    display: block;
+    background: #d7d5d5;
+}
+
+.point-color {
+    height: 46px;
+    border-top: 3px solid #e4e2e2;
+}
+
+.point-color:hover {
+    border-top: 4px solid #023d4b;
+    border-radius: 5px;
+    background: #cdcaca;
+}
+
+.point-color ul {
+    margin-top: 5px;
+}
+
+
+/* Footer */
+
+.footer {
+    height: 350px;
+    background: #023d4b;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.links {
+    display: flex;
+}
+
+.content-list {
+    flex: 1;
+    width: 330px;
+    height: 350px;
+    padding: 30px 10px 0px 15px;
+    border-right: 2px solid white;
+}
+
+.content-list p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content-list ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.content-list ul li {
+    margin-bottom: 5px;
+}
+
+.content-list ul li a:hover {
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.footer-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #a9a7a7;
+}
+
+.main-icon {
+    color: white;
+}
+
+
+/* Download App */
+
+.download-app {
+    width: 330px;
+    height: 350px;
+    padding: 30px 10px 0px 15px;
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.download-app p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.download-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app-icon {
+    width: 200px;
+    height: 70px;
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+}
+
+.app-icon:hover {
+    transform: scale(1.05);
+}
+
+
+/* Location */
+
+.location {
+    flex: 1;
+    width: 330px;
+    height: 350px;
+    padding: 30px 10px 0px 15px;
+    border-right: 2px solid white;
+}
+
+.location p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.location img {
+    height: 150px;
+    width: 240px;
+    border: 3px solid black;
+}
+
+.location-icon {
+    width: 200px;
+    height: 70px;
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+}
+
+.location-icon:hover {
+    transform: scale(1.05);
+}
+
+
+/* Social Media Icons */
+
+.media-icon {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.social {
+    margin-left: 30px;
+}
+
+.social-icon {
+    flex: 1;
+    width: 330px;
+    height: 350px;
+    padding: 30px 10px 0 15px;
+}
+
+.social-icon p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.app-icon:hover {
+    transform: scale(1.1);
+}

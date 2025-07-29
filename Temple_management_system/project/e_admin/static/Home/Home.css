@@ -1,0 +1,53 @@
+.slider {
+    display: flex;
+}
+
+.card-title-change {
+    margin: 5px 0px 10px 0px;
+}
+
+.btn a {
+    margin: 10px 20px 0px -13px;
+    background: #023d4b;
+    border: none;
+    padding: 10px 20px;
+    border: 3px double aliceblue;
+}
+
+.btn a:hover {
+    background: #e4e2e2;
+    color: black;
+    border: 3px double #e4e2e2;
+}
+
+.cards {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    /* margin: 15px; */
+    padding: 15px;
+    background-color: #023d4b;
+}
+
+.cards-zone {
+    display: flex;
+    background: #f8f9fa;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: auto;
+    background-color: #e4e2e2;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.card-1 {
+    border-bottom: 1px solid black;
+}
+
+.cards-adjust {
+    margin-top: 10px;
+}

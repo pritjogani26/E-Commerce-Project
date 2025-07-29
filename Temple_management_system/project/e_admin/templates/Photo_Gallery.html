@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/static/Gallery/Photo_Gallery.css">
+    <link rel="stylesheet" href="/static/HeaderAndFooter/HeaderAndFooter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body onload="">
+
+    <!-- Header_02 -->
+    <header>
+        <div class="header">
+            <div class="icon-box">
+                <div class="logo">
+                    <img src="/static/Images/logo.jpg" alt="logo" height="100px" width="100px">
+                    <h1>Shree Kashtabhanjan Dev Hanumanji Mandir, Salangpur</h1>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="navbar">
+                <ul class="main-ul">
+                    <li class="point-color"><a href="Home">Home</a></li>
+                    <li class="point-color">
+                        <a>Online Service</a>
+                        <ul>
+                            <li><a href="Room_Booking">Room Booking</a></li>
+                            <li><a href="Store">Online Store</a></li>
+                        </ul>
+                    </li>
+                    <li class="point-color"><a href="Donation">Donation</a></li>
+                    <li class="point-color">
+                        <a>General Information</a>
+                        <ul>
+                            <li><a href="Information">Information</a></li>
+                            <li><a href="Schedule">Schedule</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="point-color">
+                        <a>Gallery</a>
+                        <ul>
+                            <li><a href="Photo_Gallery">Photos Gallery</a></li>
+                            <li><a href="Festival_Gallery">Event Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="point-color"><a href="News_And_Event">News and Events</a></li>
+                    <li class="point-color"><a href="Feedback">Feedback</a></li>
+                    {% if user.is_authenticated %}
+                    <li class="point-color"><a href="Profile" id="login-button">Profile</a></li>
+                    <li class="point-color"><a href="{% url 'handlelogout' %}" id="singUp-button">Log-out</a></li>
+                    {% else %}
+                    <li class="point-color"><a href="SignIn" id="login-button">Log-In</a></li>
+                    <li class="point-color"><a href="SignUp" id="singUp-button">Sign-Up</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <input type="radio" name="photos" id="check_main" checked>
+    <input type="radio" name="photos" id="check10">
+    <input type="radio" name="photos" id="check9">
+    <input type="radio" name="photos" id="check8">
+    <input type="radio" name="photos" id="check7">
+    <input type="radio" name="photos" id="check6">
+    <input type="radio" name="photos" id="check5">
+    <input type="radio" name="photos" id="check4">
+    <input type="radio" name="photos" id="check3">
+    <input type="radio" name="photos" id="check2">
+    <input type="radio" name="photos" id="check1">
+
+    <div class="photo_container">
+        <div class="heading">
+            <h2>Photo Gallery</h2>
+        </div>
+        <div class="top-content">
+            <label id="lall" for="check_main">All Photos</label>
+            <label id="l1" for="check1">Today</label>
+            <label id="l2" for="check2">Yesterday</label>
+            <label id="l3" for="check3">29 APR 2024</label>
+            <label id="l4" for="check4">28 APR 2024</label>
+            <label id="l5" for="check5">27 APR 2024</label>
+            <label id="l6" for="check6">26 APR 2024</label>
+            <label id="l7" for="check7">25 APR 2024</label>
+            <label id="l8" for="check8">24 APR 2024</label>
+            <label id="l9" for="check9">23 APR 2024</label>
+            <label id="l10" for="check10">22 APR 2024</label>
+        </div>
+
+        <div class="photo-gallery new">
+
+
+            <!-- Day 01 -->
+            <div class="pic day1">
+                <img src="/static/Home/Daily/A1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day1">
+                <img src="/static/Home/Daily/A2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day1">
+                <img src="/static/Home/Daily/A3.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day1">
+                <img src="/static/Home/Daily/A4.jpeg" onclick="openFullImg(this.src)">
+            </div>
+
+
+            <!-- Day 02 -->
+            <div class="pic day2">
+                <img src="/static/Home/Daily/B1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day2">
+                <img src="/static/Home/Daily/B2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day2">
+                <img src="/static/Home/Daily/B3.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day2">
+                <img src="/static/Home/Daily/B4.jpeg" onclick="openFullImg(this.src)">
+            </div>
+
+            <!-- Day 03 -->
+            <div class="pic day3">
+                <img src="/static/Home/Daily/C1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day3">
+                <img src="/static/Home/Daily/C2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day3">
+                <img src="/static/Home/Daily/C3.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day3">
+                <img src="/static/Home/Daily/C4.jpg" onclick="openFullImg(this.src)">
+            </div>
+
+            <!-- Day 04 -->
+            <div class="pic day4">
+                <img src="/static/Home/Daily/D1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day4">
+                <img src="/static/Home/Daily/D2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day4">
+                <img src="/static/Home/Daily/D3.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day4">
+                <img src="/static/Home/Daily/D4.jpg" onclick="openFullImg(this.src)">
+            </div>
+
+            <!-- Day 05 -->
+            <div class="pic day5">
+                <img src="/static/Home/Daily/E1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day5">
+                <img src="/static/Home/Daily/E2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day5">
+                <img src="/static/Home/Daily/E3.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day5">
+                <img src="/static/Home/Daily/E4.jpEg" onclick="openFullImg(this.src)">
+            </div>
+
+            <!-- Day 06 -->
+            <div class="pic day6">
+                <img src="/static/Home/Daily/F1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day6">
+                <img src="/static/Home/Daily/F2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day6">
+                <img src="/static/Home/Daily/F3.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day6">
+                <img src="/static/Home/Daily/F4.jpeg" onclick="openFullImg(this.src)">
+            </div>
+
+            <!-- Day 07 -->
+            <div class="pic day7">
+                <img src="/static/Home/Daily/G1.jpeg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day7">
+                <img src="/static/Home/Daily/G2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day7">
+                <img src="/static/Home/Daily/G3.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day7">
+                <img src="/static/Home/Daily/G4.jpg" onclick="openFullImg(this.src)">
+            </div>
+
+            <!-- Day 08 -->
+            <div class="pic day8">
+                <img src="/static/Home/Daily/H1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day8">
+                <img src="/static/Home/Daily/H2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day8">
+                <img src="/static/Home/Daily/H3.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day8">
+                <img src="/static/Home/Daily/H4.jpeg" onclick="openFullImg(this.src)">
+            </div>
+
+            <!-- Day 09 -->
+            <div class="pic day9">
+                <img src="/static/Home/Daily/I1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day9">
+                <img src="/static/Home/Daily/I2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day9">
+                <img src="/static/Home/Daily/I3.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day9">
+                <img src="/static/Home/Daily/I4.jpg" onclick="openFullImg(this.src)">
+            </div>
+
+            <!-- Day 10 -->
+            <div class="pic day10">
+                <img src="/static/Home/Daily/J1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day10">
+                <img src="/static/Home/Daily/J2.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day10">
+                <img src="/static/Home/Daily/J3.jpeg" onclick="openFullImg(this.src)">
+            </div>
+            <div class="pic day10">
+                <img src="/static/Home/Daily/J4.jpeg" onclick="openFullImg(this.src)">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img src="" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <!-- Footer_02 -->
+    <footer>
+        <div class="footer">
+            <div class="links">
+
+                <div class="content-list">
+                    <p><i class="fa-solid fa-arrows-to-dot footer-icon main-icon"></i>Useful Links : </p>
+                    <ul type="none">
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Home">Home</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Information">Information</a>
+                        </li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Schedule">Schedule</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Photo_Gallery">Photo Gallery</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Festival_Gallery">Event Gallery</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Room_Booking">Room Booking</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Store">Spiritual Store</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="Donation">Donation</a></li>
+                        <li><i class="fa-solid fa-hand-point-right footer-icon"></i><a href="News_And_Event">Event and News</a></li>
+                    </ul>
+                </div>
+
+                <div class="download-app">
+                    <p><i class="fa-solid fa-arrows-to-dot footer-icon main-icon"></i>Download App :</p>
+                    <div class="download-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.kastbhanjandev.salangpur&hl=en">
+                            <img src="/static/Images/google-play.png" alt="Google Play" class="app-icon">
+                        </a>
+                        <a href="https://apps.apple.com/in/app/salangpur-hanumanji/id990972878">
+                            <img src="/static/Images/app-store.png" alt="App Store" class="app-icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <p><i class="fa-solid fa-arrows-to-dot footer-icon main-icon"></i>Location :</p>
+                    <a href="https://maps.app.goo.gl/DjssB7pYamfEH6xu7">
+                        <img src="/static/Images/location.png" alt="Location" class="location-icon">
+                    </a>
+                </div>
+
+                <div class="social-icon">
+                    <p><i class="fa-solid fa-arrows-to-dot footer-icon main-icon"></i>Social Media Links : </p>
+                    <ul class="social">
+                        <a href="https://www.instagram.com/salangpurhanumanji_official/?igshid=1tvbblkjsmms1"><i class="fa-brands fa-instagram media-icon"></i></a>
+                        <a href="https://www.facebook.com/SalangpurHanuman/"><i class="fa-brands fa-facebook media-icon"></i></a>
+                        <a href="https://www.youtube.com/user/salangpurhanumanji"><i class="fa-brands fa-youtube media-icon"></i></a>
+                        <a href="https://twitter.com/kashtbhanjandev?ref_src=twsrc%5Etfw"><i class="fa-brands fa-x-twitter media-icon"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let fullImgBox = document.getElementById("fullImgBox");
+        let fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+    </script>
+    <script>
+        var btn = document.getElementById("continue");
+        var container = document.getElementById("boxcontainer");
+
+        btn.onclick = function() {
+            container.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
