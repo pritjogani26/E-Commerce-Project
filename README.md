@@ -1,4 +1,4 @@
-<h1 align="center">🛕 Temple Management System</h1>
+<h1 align="center">Temple Management System</h1>
 
 <p align="center"><b>
 A complete web-based solution to streamline temple administration, online room booking, donation handling, and spiritual store operations for <br/><u>Shree Kashtabhanjan Dev Hanumanji Mandir</u> (Salangpur).
@@ -6,7 +6,7 @@ A complete web-based solution to streamline temple administration, online room b
 
 <hr/>
 
-<h3>👨‍💻 Developed by:</h3>
+<h3>Developed by:</h3>
 
 <ul>
   <li>Jogani Prit Nayneshbhai (3117)</li>
@@ -18,17 +18,17 @@ A complete web-based solution to streamline temple administration, online room b
 
 ## 📑 Table of Contents
 
-- [📌 Project Overview](#project-overview)
-- [✨ Features](#features)
-- [🧰 Technologies Used](#technologies-used)
-- [💻 System Requirements](#system-requirements)
-- [⚙️ Installation Guide](#installation-guide)
-- [📦 Modules](#modules)
-- [🖼️ Screenshots](#screenshots)
-- [⚠️ Limitations](#limitations)
-- [🔮 Future Scope](#future-scope)
-- [🤝 Contributing](#contributing)
-- [📧 Contact](#contact)
+- Project Overview
+- Features
+- Technologies Used
+- System Requirements
+- Installation Guide
+- Modules
+- Screenshots
+- Limitations
+- Future Scope
+- Contributing
+- Contact
 
 ---
 
@@ -43,15 +43,15 @@ The <b>Temple Management System</b> is designed to address inefficiencies in the
 ## ✨ Features
 
 <ul>
-  <li>🔒 User Registration & Secure Login</li>
-  <li>📅 Online Room Booking</li>
-  <li>💳 Online Donation System with Categories</li>
-  <li>🛍️ Spiritual Store (Idols, Books, Pendants)</li>
-  <li>📢 Event & News Management</li>
-  <li>📊 Admin Dashboard with Analytics & Reports</li>
-  <li>📬 Feedback and Customer Support</li>
-  <li>📂 Inventory Management</li>
-  <li>🔐 Data Privacy and Secure Transactions</li>
+  <li>User Registration & Secure Login</li>
+  <li>Online Room Booking</li>
+  <li>Online Donation System with Categories</li>
+  <li>Spiritual Store (Idols, Books, Pendants)</li>
+  <li>Event & News Management</li>
+  <li>Admin Dashboard with Analytics & Reports</li>
+  <li>Feedback and Customer Support</li>
+  <li>Inventory Management</li>
+  <li>Data Privacy and Secure Transactions</li>
 </ul>
 <br>
 ---
@@ -188,12 +188,12 @@ The <b>Temple Management System</b> is designed to address inefficiencies in the
   🔮 Future Scope
 
   <ui>  
-    <li>🔐 Biometric or facial recognition login</li>
-    <li>📊 Advanced analytics with AI/ML</li>
-    <li>🌐 Social media integration for event promotion</li>
-    <li>📦 Real-time inventory & shipping tracking</li>
-    <li>🔁 Automation for volunteer/event/resource management</li>
-    <li>📱 Mobile App version for Android/iOS</li>
+    <li>Biometric or facial recognition login</li>
+    <li>Advanced analytics with AI/ML</li>
+    <li>Social media integration for event promotion</li>
+    <li>Real-time inventory & shipping tracking</li>
+    <li>Automation for volunteer/event/resource management</li>
+    <li>Mobile App version for Android/iOS</li>
   </ui>
 
 <br><br>
